@@ -3,6 +3,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
+strong {
+  color: #0E7184;
+  font-weight: normal;
+}
 .wrapper {
   max-width: 1400px;
   margin: auto;
@@ -114,9 +118,98 @@ body {
 }
 .info-buy-canon {
   display: grid;
-  grid-template-columns: 50px 580px 430px 280px;
-  grid-template-rows: 700px;
-  grid-template-areas: ;
+  grid-template-columns: 50px 600px 420px 270px;
+  grid-template-rows: 750px;
+  grid-template-areas: "muestra principal info price";
   column-gap: 20px;
   row-gap: 20px;
+}
+.section-muestra {
+  grid-area: muestra;
+  padding: 10px;
+}
+.img1 {
+  width: 60px;
+  position: relative;
+  left: -13px;
+  top: 12px;
+}
+.section-principal {
+  grid-area: principal;
+  display: flex;
+  overflow: auto;
+  width: 590px;
+  height: 525px;
+}
+.section-info {
+  grid-area: info;
+}
+.style-price {
+  display: flex;
+  gap: 10px;
+}
+.color-red {
+  color: red;
+}
+.p-bold {
+  font-weight: 700;
+}
+.color-celeste {
+  color: #0E7184;
+}
+.time-shipping {
+  line-height: 24px;
+}
+.border-button {
+  border-bottom: 2px solid rgb(241, 237, 237);
+}
+.section-price {
+  grid-area: price;
+  border: 1px solid gray;
+  height: 300px;
+  width: 220px;
+  padding: 10px;
+}
+.color-guinda {
+  color: #AF2913;
+}
+.button {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 220px;
+  border-radius: 8px;
+  border: none;
+  background: #F3D184;
+  margin-bottom: 15px;
+  /* font-weight: initial; */
+}
+.button.color {
+  background: #F0AD64;
+  padding: 0 15px;
+}
+.seguridad {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 10px;
+}
+.section-camara {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+.section-partes-camara {
+  margin: 80px 0;
+}
+.section-partes-camara h1 {
+  font-size: 30px;
+  margin: 80px 0 50px 0;
+}
+.section-juegos {
+  margin: 80px 0;
+}
+.section-juegos h1 {
+  font-size: 30px;
+  margin: 80px 0 50px 0;
 }
